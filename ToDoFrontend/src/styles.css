@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.componentcontener {
+    padding-top: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+
+    table td:nth-child(2), table td:nth-child(3), table th:nth-child(2), table th:nth-child(3) {
+        display: none;
+     }
+}

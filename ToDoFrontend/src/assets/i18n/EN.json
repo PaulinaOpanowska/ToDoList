@@ -1,0 +1,16 @@
+{
+    "NieZnaleziono": "Not found...",
+    "wyloguj": "Logout",
+    "Uzytkownicy": "Users",
+
+    "Logowanie": {
+        "Logowanie": "Log in",
+        "Uzytkownik": "User",
+        "Haslo": "Password",
+        "Zaloguj":"Log in",
+        "Przypomnij":"Forgot?",
+        "HasloWymagane": "Password is required",
+        "UzytkownikWymagany": "Username is required",
+        "Blad": "Invalid login or password"
+    }
+}

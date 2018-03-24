@@ -1,0 +1,17 @@
+{
+    "Logowanie": {
+        "Logowanie": "Logowanie",
+        "Uzytkownik": "Użytkownik",
+        "Haslo": "Hasło",
+        "Zaloguj":"Zaloguj",
+        "Przypomnij":"Przypomnij hasło",
+        "HasloWymagane": "Hasło jest wymagane",
+        "UzytkownikWymagany": "Użytkownik jest wymagany",
+        "Blad": "Niepoprawny login lub hasło"
+    },
+  
+    "NieZnaleziono": "Nie znaleziono...",
+    "wyloguj": "Wyloguj",
+    "Uzytkownicy": "Użytkownicy"
+    
+}

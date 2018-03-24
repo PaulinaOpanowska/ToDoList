@@ -1,0 +1,11 @@
+C:\Users\Paula\source\repos\ToDo\ToDoBackend\bin\Debug\netcoreapp2.0\ToDoBackend.deps.json
+C:\Users\Paula\source\repos\ToDo\ToDoBackend\bin\Debug\netcoreapp2.0\ToDoBackend.runtimeconfig.json
+C:\Users\Paula\source\repos\ToDo\ToDoBackend\bin\Debug\netcoreapp2.0\ToDoBackend.runtimeconfig.dev.json
+C:\Users\Paula\source\repos\ToDo\ToDoBackend\bin\Debug\netcoreapp2.0\ToDoBackend.dll
+C:\Users\Paula\source\repos\ToDo\ToDoBackend\bin\Debug\netcoreapp2.0\ToDoBackend.pdb
+C:\Users\Paula\source\repos\ToDo\ToDoBackend\obj\Debug\netcoreapp2.0\ToDoBackend.csproj.CoreCompileInputs.cache
+C:\Users\Paula\source\repos\ToDo\ToDoBackend\obj\Debug\netcoreapp2.0\ToDoBackend.AssemblyInfoInputs.cache
+C:\Users\Paula\source\repos\ToDo\ToDoBackend\obj\Debug\netcoreapp2.0\ToDoBackend.AssemblyInfo.cs
+C:\Users\Paula\source\repos\ToDo\ToDoBackend\obj\Debug\netcoreapp2.0\ToDoBackend.dll
+C:\Users\Paula\source\repos\ToDo\ToDoBackend\obj\Debug\netcoreapp2.0\ToDoBackend.pdb
+C:\Users\Paula\source\repos\ToDo\ToDoBackend\obj\Debug\netcoreapp2.0\ToDoBackend.csprojResolveAssemblyReference.cache

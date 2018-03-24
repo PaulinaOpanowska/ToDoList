@@ -1,0 +1,35 @@
+<div class="main-header navbar top-bar fixed">
+  <div class="navbar-inner">
+
+    <div class="container-fluid">
+
+
+      <a *ngIf="loggedIn()" class="brand" routerLink="/home" ><span>ToDo</span></a>
+              
+      <!-- start: Header Menu -->
+      <div class="nav-no-collapse header-nav">
+        <ul class="nav pull-right">
+
+          <li class="logoutli"><a (click)="wyloguj()"><i class="fa fa-power-off" aria-hidden="true"></i> {{ "wyloguj" | translate }}</a></li>
+  
+          <li>
+            <div class="lang-bar">
+                <select class="form-control form-control-sm selectpicker" data-width="fit" (change)='changeLang($event.target.value)'>
+                    <option selected>EN</option>
+                    <option>PL</option>
+                </select>
+              <!-- <a *ngFor="let j of jezyki" (click)="changeLang(j.Skrot, j.Id)">{{j.Skrot}} </a>-->
+            </div>
+          </li>
+          <!-- end: User Dropdown -->
+        </ul>
+      </div>
+      <!-- end: Header Menu -->
+      
+    </div>
+  </div>
+</div>
+
+<div class="componentcontener">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,65 @@
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+
+    <a [routerLink]="['/form/new']" class="btn btn-primary">New ToDo</a>
+
+    <div class="well">
+          <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+                    <select id="priority" class="form-control" [(ngModel)]="query.priorityId" (change)="onFilterChange()">
+                    <option value=""></option>
+                    <option *ngFor="let p of priorities" value="{{ p.id }}">{{ p.name }}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" class="form-control" [(ngModel)]="query.name" (keyup)="onFilterChange()" >
+                </div>
+            </div>
+          </div>
+        </div>
+        <table class="table">
+        <thead>
+            <tr>
+            <th *ngFor="let c of columns">
+                <div *ngIf="c.isSortable" (click)="sortBy(c.key)">
+                {{ c.title }}
+                <i *ngIf="query.sortBy === c.key" 
+                    class="fa"
+                    [class.fa-sort-asc]="query.isSortAscending"
+                    [class.fa-sort-desc]="!query.isSortAscending"
+                ></i>
+                </div>
+                <div *ngIf="!c.isSortable">
+                {{ c.title }}
+                </div>
+            </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let v of queryResult.items">
+                <td>{{ v.name }}</td>
+                <td >
+                    <i *ngIf="v.done == true"  [ngStyle]="{'color':'green'}" class="fa fa-check"></i>
+                    <i *ngIf="v.done == false"  [ngStyle]="{'color':'red'}" class="fa fa-times"></i>
+                </td>
+                <td>{{ v.priority.name }}</td>
+                <td [ngStyle]="{'text-align':'right'}">
+                    <button class="btn" [routerLink]="['/form/edit/', v.id]"><i class="fa fa-pencil"></i></button>
+                    <button class="btn" (click)="DeleteToDo(v.id)"><i class="fa fa-trash"></i></button>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+        <pagination [total-items]="queryResult.totalItems" [page-size]="query.pageSize" (page-changed)="onPageChange($event)"></pagination>
+
+        </div>
+      </div>
+    </div>
+</section>
